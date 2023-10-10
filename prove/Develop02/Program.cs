@@ -29,6 +29,7 @@ class Program
 
         while (true)
         {
+            Console.WriteLine("");
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");
@@ -38,6 +39,7 @@ class Program
 
             Console.Write("Enter your choice: ");
             string choice = Console.ReadLine();
+            Console.WriteLine("");
 
             switch (choice)
             {
