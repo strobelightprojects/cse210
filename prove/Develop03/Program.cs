@@ -13,7 +13,7 @@ class Program
         Console.WriteLine("Enter your choice (1 or 2): ");
         string choice = Console.ReadLine();
 
-        List<string> updatedLines = new List<string>(); // Collection to store edited content
+        List<string> updatedLines = new List<string>(); 
 
         if (choice == "1")
         {
@@ -25,7 +25,7 @@ class Program
 
             Console.Clear();
 
-            // Save the scripture to a CSV file
+            // Save to csv
             using (StreamWriter writer = new StreamWriter("scripture.csv", true))
             {
                 writer.WriteLine(referenceInput);
@@ -37,7 +37,7 @@ class Program
             Console.Clear();
             Console.WriteLine("Existing Scriptures:");
 
-            // Read and display existing scriptures from the CSV file
+            // Read and display 
             string[] lines = File.ReadAllLines("scripture.csv");
 
             for (int i = 0; i < lines.Length; i += 2)
