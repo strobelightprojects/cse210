@@ -8,7 +8,7 @@ class Program
         while (true)
         {
             DisplayMenu();
-            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 4)
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 5)
             {
                 Activity activity = null;
 
@@ -24,6 +24,9 @@ class Program
                         activity = new Listing();
                         break;
                     case 4:
+                        activity = new Yoga();
+                        break;
+                    case 5:
                         return;
                 }
 
@@ -33,7 +36,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please enter a number between 1 and 4.");
+                Console.WriteLine("Invalid choice. Please enter a number between 1 and 5.");
             }
 
             Console.Write("Do you want to perform another activity? (yes/no): ");
@@ -50,7 +53,8 @@ class Program
         Console.WriteLine("1. Breathing");
         Console.WriteLine("2. Reflection");
         Console.WriteLine("3. Listing");
-        Console.WriteLine("4. Exit");
-        Console.Write("Enter your choice (1-4): ");
+        Console.WriteLine("4. Yoga");
+        Console.WriteLine("5. Exit");
+        Console.Write("Enter your choice (1-5): ");
     }
 }
