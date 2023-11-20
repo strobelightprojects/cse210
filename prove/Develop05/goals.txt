@@ -1,0 +1,5 @@
+SimpleGoal,Run a Marathon,True
+EternalGoal,Read Scriptures,False
+ChecklistGoal,Attend Temple,False
+SimpleGoal,pizza,False
+TotalScore,1150
