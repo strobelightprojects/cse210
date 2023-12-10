@@ -26,6 +26,7 @@ public class Activity
         return 0;
     }
 
+
     public virtual string GetSummary()
     {
         return $"{date:dd MMM yyyy} - {GetType().Name} ({lengthMinutes} min)";
